@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaga de emprego.com</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <script src="pagina.js"></script>
+
+<div class="cabecalho"></div> 
+<div class="azul">
+ 
+
+    <div class="formulario">
+        <form method="post" action="send.php" onsubmit="return check_form()">
+            <label>Nome: </label><input type="text" maxlength="40" name="nome" id="nome"><br><br>
+            <label>Telefone: </label><input type="number" maxlength="12" name="Telefone" id="telefone" placeholder="11999999999"><br><br>
+            <label>Data de Nascimento: </label><input type="date"  name="dtNascimento" id="dataNascimento"><br><br>
+            <label>Genero: </label><br>
+                    <label> Masculino:</label><input type="radio" name="genero" value="Masculino" id="radio1">
+                    <label> Feminino:</label><input type="radio" name="genero" value="Feminino" id="radio2">
+                    <label> Outro:</label><input type="radio" name="genero" value="Outro" id="radio3"><br>
+                    <label>Endereco Completo:</label><input type="text" maxlength="200"name="Endereco" id="adress"><br><br>
+                    <label>Escolha vaga a se candidatar:</label>
+                    <select name="vaga" id="vaga">
+                            <option value="0">Faça sua escolha</option>
+                            <option value="1420">Programador Front</option>
+                            <option value="1580">Programador Back-End</option>
+                            <option value="2140">Cientista de dados</option>
+                            <option value="3247">Design UX/UI</option>
+                     </select><br><br>
+                        <input type="submit" value="Enviar" id="form_button">
+                        </form>  
+
+    </div>
+    <div class="rei">
+        <div class="atendente"></div>
+        <div class="mapa_empresa"></div>
+        <div class="endereco_empresa"></div>
+    </div>
+</div>
+   
+
+</body>
+</html>
